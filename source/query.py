@@ -1,11 +1,6 @@
 import chromadb
 import ollama
-
-DB_DIR = "./chroma_db"
-COLLECTION_NAME = "rag_knowledge_base"
-EMBED_MODEL = "nomic-embed-text"
-LLM_MODEL = "qwen3.8:27b-mlx"
-TOP_K = 3
+from config import COLLECTION_NAME, DB_DIR, EMBED_MODEL, LLM_MODEL, TOP_K
 
 def retrieve_context(query: str, n_results: int = TOP_K):
     client = chromadb.PersistentClient(path=DB_DIR)

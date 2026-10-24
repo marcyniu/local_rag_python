@@ -3,11 +3,7 @@ import chromadb
 import ollama
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pypdf import PdfReader
-
-DATA_DIR = "./data"
-DB_DIR = "./chroma_db"
-COLLECTION_NAME = "rag_knowledge_base"
-EMBED_MODEL = "nomic-embed-text"
+from config import COLLECTION_NAME, DATA_DIR, DB_DIR, EMBED_MODEL
 
 def load_documents(data_path: str):
     documents = []
