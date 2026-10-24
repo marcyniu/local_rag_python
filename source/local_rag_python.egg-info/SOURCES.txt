@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+source/config.py
+source/delete_collection.py
+source/ingest.py
+source/inspect_collection.py
+source/list_collections.py
+source/query.py
+source/query_collection.py
+source/show_embeddings.py
+source/local_rag_python.egg-info/PKG-INFO
+source/local_rag_python.egg-info/SOURCES.txt
+source/local_rag_python.egg-info/dependency_links.txt
+source/local_rag_python.egg-info/requires.txt
+source/local_rag_python.egg-info/top_level.txt

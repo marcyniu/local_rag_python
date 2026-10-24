@@ -1,0 +1,8 @@
+config
+delete_collection
+ingest
+inspect_collection
+list_collections
+query
+query_collection
+show_embeddings

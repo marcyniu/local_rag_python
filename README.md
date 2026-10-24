@@ -5,6 +5,7 @@
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+python -m pip install -e .
 ```
 
 ### Configure the RAG environment
@@ -39,3 +40,35 @@ an explicit confirmation flag:
 ```bash
 python3 source/delete_collection.py --collection rag_knowledge_base --yes
 ```
+
+### Debuging Python in VS Code
+1. Install debugpy in project (venv):
+```bash
+pip install debugpy
+```
+2. Create launch.json config:
+```bash
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Attach",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      }
+    }
+  ]
+}
+```
+2. Run script in terminall with following params:
+```bash
+python -m debugpy --listen 5678 --wait-for-client my_script.py
+```
+Example:
+```bash
+ python -m debugpy --listen 5678 --wait-for-client query.py "How much can I expense for my home office?"
+```
+

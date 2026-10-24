@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-rag-python"
+version = "0.1.0"
+description = "A local retrieval-augmented generation app backed by ChromaDB and Ollama"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "chromadb==1.5.9",
+    "langchain-text-splitters==0.3.11",
+    "ollama==0.6.3",
+    "pypdf==6.21.2",
+]
+
+[tool.setuptools]
+py-modules = [
+    "config",
+    "delete_collection",
+    "ingest",
+    "inspect_collection",
+    "list_collections",
+    "query",
+    "query_collection",
+    "show_embeddings",
+]
+
+[tool.setuptools.package-dir]
+"" = "source"
