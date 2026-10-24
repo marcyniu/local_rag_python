@@ -1,4 +1,0 @@
-chromadb==1.5.9
-langchain-text-splitters==0.3.11
-ollama==0.6.3
-pypdf==6.21.2
