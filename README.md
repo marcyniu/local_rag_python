@@ -31,6 +31,7 @@ python3 source/inspect_collection.py --limit 10
 python3 source/show_embeddings.py --limit 5
 python3 source/show_embeddings.py --limit 1 --full
 python3 source/query_collection.py "home-office stipend" --limit 5
+python3 source/query.py "How much can I expense for my home office?"
 ```
 
 `show_embeddings.py` prints the first eight vector dimensions by default; `--full`

@@ -1,4 +1,5 @@
 venv/
+chroma_db/
 source/chroma_db/
 source/data/
 source/*.egg-info
